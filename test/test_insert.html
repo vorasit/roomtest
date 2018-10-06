@@ -1,0 +1,33 @@
+﻿<html>
+<body bgcolor="#FF9999">
+<div align="center">
+  <form method="post" action="test_insert.php">
+    <h1>แบบฟอรม์การลงทะเบียนการจองห้องสอบแต่ละห้อง </h1>
+    <p>
+	รหัสการจอง : <input type="text" name="test_id"><p>
+	รหัสกลุ่ม : <input type="text" name="group_id"><p>
+	รหัสวิชา :<input type="text" name="sub_id"><br>*รหัสวิชาไม่มีไม่มี - ระหว่างกึ่งกลาง ดังตัวอย่าง 39012170<p>
+วันที่สอบ : <select name="nday">
+<option value="วันจันทร์" selected>วันจันทร์</option>
+<option value="วันอังคาร">วันอังคาร</option>
+<option value="วันพุธ">วันพุธ</option>
+<option value="วันพฤหัสบดี">วันพฤหัสบดี</option>
+<option value="วันศุกร์">วันศุกร์</option>
+<option value="วันเสาร์">วันเสาร์</option>
+<option value="วันอาทิตย์">วันอาทิตย์</option>
+</select><p>
+   วัน/ เดือน/ปี ที่สอบ : <input type="date" name="day">ตัวอย่าง 01/01/2500<p>
+	เลือกเวลาในการจองห้องสอบ :<br>
+<input type="radio" name="time" value="คาบเช้า09.00-12.00น.">คาบเช้า 09.00-12.00น.<br>
+<input type="radio" name="time" value="คาบบ่าย13.00-16.00น.">คาบบ่าย 13.00-16.00น.<p>
+    รหัสห้องสอบ : <input type="text" name="room_id"><p>
+	<input type="submit" name="send" value="บันทึก">
+	<input type="reset" name="cancel" value="ยกเลิก">
+  </form>
+  <p><img src="../img/main@2x.png" width="240" height="240"> </p>
+  <p>*เปิดตารางจัดทำรายงานการสอบทั้งหมด เพื่อดูประกอบ <a href="test_reportsum.php" target="_blank">คลิกที่นี้</a></p>
+<p>*เปิดตารางจัดทำรายงานวิชาทั้งหมด เพื่อดูรหัสวิชาประกอบ <a href="../subject/sub_reportsum.php" target="_blank">คลิกที่นี้</a></p>
+<p>*เปิดตารางห้องทั้งหมด เพื่อดูรหัสห้องที่มีในระบบ <a href="../room/room_reportsum1.php" target="_blank">คลิกที่นี้</a></p>
+</div>
+</body>
+</html>
